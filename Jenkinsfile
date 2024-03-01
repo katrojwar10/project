@@ -24,13 +24,13 @@ pipeline {
             }
         }
     }
-    post {
+        
+     post {
         success {
             mail to: akshaykatrojwar@gmail.com, subject: 'The Pipeline success :('
-            
         }
         failure {
             mail to: katrojwarakshay10@gmail.com, subject: 'The Pipeline failed :('
         }
-    }
+     }
 }
